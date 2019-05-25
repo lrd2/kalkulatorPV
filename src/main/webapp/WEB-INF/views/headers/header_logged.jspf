@@ -1,0 +1,31 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<nav class="navbar navbar-expand-lg navbar-blue navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/user/investments">
+            <img src="../../resources/other/sun.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Kalkulator PV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/user/investments">Moje inwestycje</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/add">Dodaj nową kalkulację</a>
+                </li>
+            </ul>
+            <button class="btn btn-outline-primary my-2 my-sm-0 btn-sm" id="logutButton">Wyloguj użytkownika: ${user.login}
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("logutButton").onclick = function () {
+            location.href = "/logout";
+        };
+    </script>
+</nav>
